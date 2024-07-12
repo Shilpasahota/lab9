@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Photo Gallery</h1>
+    </header>
+    <nav>
+        <button data-filter="all">All</button>
+        <button data-filter="nature beauty">nature beauty</button>
+        <button data-filter="children">children</button>
+        <button data-filter="scenery">scenery</button>
+    </nav>
+    <main>
+        <section id="gallery" class="gallery">
+        </section>
+    </main>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    <footer>
+        <p> INTERACTIVE PHOTO GALLERY.</p>
+    </footer>
+</body>
+</html>
